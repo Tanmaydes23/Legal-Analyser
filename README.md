@@ -11,7 +11,7 @@
 ---
 
 ## 📌 Overview
-
+ 
 Legal Document Analyzer is an end-to-end AI system that analyzes legal documents such as contracts, NDAs, rental agreements, and employment agreements.  
 It provides **clause extraction, risk identification, and plain-English explanations** using a hybrid AI architecture.
 
