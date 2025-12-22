@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
 ![Next.js](https://img.shields.io/badge/Next.js-Frontend-black)
-![License](https://img.shields.io/badge/License-MIT-green)
+
 
 **AI-powered legal document analysis system for contracts and agreements**
 
@@ -50,11 +50,13 @@ This project focuses on **applied NLP, system design, and full-stack engineering
 cd backend
 pip install -r requirements.txt
 python main.py
+```
 
 ### Frontend
 ```bash
 cd frontend
 npm install
 npm run dev
+
 
 
