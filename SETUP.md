@@ -51,7 +51,7 @@ Navigate to: **http://localhost:3000**
 ## ✅ Test It Out
 
 1. Click "Analyze Document"
-2. Upload a sample contract (PDF/DOCX/TXT)
+2. Upload a sample contract(PDF/DOCX/TXT)
 3. Wait 20-30 seconds
 4. Review the AI analysis!
 
