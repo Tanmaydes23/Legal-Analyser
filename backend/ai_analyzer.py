@@ -7,7 +7,7 @@ import os
 from typing import Dict, List
 
 class LegalAIAnalyzer:
-    """AI-powered legal document analysis using Groq"""
+    """Legal document analysis using Groq"""
     
     def __init__(self):
         """Initialize Groq client"""
