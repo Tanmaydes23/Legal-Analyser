@@ -6,7 +6,7 @@ from typing import Dict, List
 from legal_bert_analyzer import get_legal_bert_analyzer, ExtractedClause
 from ai_analyzer import LegalAIAnalyzer
 from civictech_kb_loader import get_civictech_loader  # NEW: CivicTech data
-from opennyai_wrapper import get_opennyai_wrapper  # NEW: OpenNyAI
+# OpenNyAI removed - not needed (regex patterns handle entities)
 from llm_risk_assessor import get_llm_risk_assessor  # NEW: LLM risk
 from dataclasses import asdict
 
@@ -14,7 +14,7 @@ class HybridLegalAnalyzer:
     """
     NEW Hybrid analyzer combining:
     - InLegalBERT for clause extraction & entity recognition
-    - OpenNyAI for Indian legal NER
+
     - CivicTech India for 8 Indian Acts data (from GitHub)
     - Groq LLM for intelligent risk assessment & recommendations
     """
@@ -22,7 +22,7 @@ class HybridLegalAnalyzer:
     def __init__(self):
         """Initialize hybrid analyzer with new components"""
         print("🚀 Initializing NEW Hybrid Legal Analyzer...")
-        print("   📦 InLegalBERT + OpenNyAI + CivicTech + Heavy LLM")
+        print("   📦 InLegalBERT + CivicTech + Heavy LLM")
         
         # Layer 1: InLegalBERT (NLP/ML)
         self.bert_analyzer = get_legal_bert_analyzer()
@@ -31,8 +31,7 @@ class HybridLegalAnalyzer:
         self.civictech_loader = get_civictech_loader()
         self.indian_acts = self.civictech_loader.load_all_acts()
         
-        # Layer 3: OpenNyAI (Indian legal NER)
-        self.opennyai = get_opennyai_wrapper()
+        # Layer 3: OpenNyAI - Removed (regex patterns sufficient for entity extraction)
         
         # Layer 4: LLM Risk Assessor (replaces rule-based risk)
         self.llm_assessor = get_llm_risk_assessor()
