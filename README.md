@@ -33,7 +33,7 @@ This project focuses on **applied NLP, system design, and full-stack engineering
 
 - **Frontend**: Next.js + React  
 - **Backend**: FastAPI (Python)  
-- **AI / NLP**: Google Gemini, legal-domain NLP pipelines  
+- **AI / NLP**: InLegalBERT (768-dim embeddings), Groq LLM, CUAD-calibrated risk scoring  
 - **Design**: Hybrid system combining ML inference and rule-based logic  
 
 ---
@@ -43,7 +43,7 @@ This project focuses on **applied NLP, system design, and full-stack engineering
 ### Prerequisites
 - Python 3.10+
 - Node.js 18+
-- Google Gemini API key
+- Groq API key
 
 ### Backend
 ```bash
